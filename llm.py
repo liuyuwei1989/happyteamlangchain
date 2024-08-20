@@ -136,6 +136,7 @@ def test_chat_history():
 
 
 def test_conversation_chain():
+    # https://api.python.langchain.com/en/latest/runnables/langchain_core.runnables.history.RunnableWithMessageHistory.html
     class InMemoryHistory(BaseChatMessageHistory, BaseModel):
         """In memory implementation of chat message history."""
 
