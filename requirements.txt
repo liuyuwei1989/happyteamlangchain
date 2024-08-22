@@ -3,3 +3,5 @@ numexpr~=2.10.1
 wikipedia~=1.4.0
 langchain-openai~=0.1.22
 langchain-community~=0.2.12
+flask~=3.0.3
+flasgger~=0.9.7.1
