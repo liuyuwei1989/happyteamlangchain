@@ -1,0 +1,196 @@
+C:\Users\tingt\miniconda3\envs\Hackathon\python.exe "C:\Users\tingt\PycharmProjects\Hackathon\happyteamlangchain\happyteamlangchain\shopping wishlist.py"
+User Story
+Jira type: Story
+
+Title: Allow users to create and track wish lists on the retail website
+
+Description: 
+As a frequent online shopper, I want to be able to easily create and track my wish lists on the retail website so that I can save products I'm interested in for later purchase and easily share my lists with friends and family. 
+
+Acceptance Criteria:
+1. User can create a new wish list on the website.
+2. User can add products to the wish list from product pages.
+3. User can view and edit their wish list from their account dashboard.
+4. User can easily share their wish list with friends and family via email or social media.
+5. User can mark items as purchased or remove them from the wish list.
+6. User can track the availability and price changes of items on their wish list.
+7. User receives notifications for price drops or items going out of stock on their wish list.
+8. User can sort and filter the items in their wish list based on various criteria.
+9. User can set privacy settings for their wish list to control who can view and edit it.
+
+Additional context:
+- The wish list feature should be easily accessible and intuitive to use for all users.
+- The wish list should be integrated with the website's existing user account system for seamless user experience.
+- The wish list should have a clean and visually appealing design to enhance user engagement.
+- The website should have clear instructions and tooltips to guide users on how to use the wish list feature effectively.
+
+Tasks
+### Tasks Breakdown for Development
+
+**Task 1: Design Wish List UI/UX**
+- **What:** Create wireframes and high-fidelity designs for the wish list feature, including the creation, viewing, and editing interfaces.
+- **How:** Collaborate with the design team to develop mockups and gather feedback from stakeholders.
+- **Why:** To ensure the wish list feature is visually appealing and user-friendly, enhancing user engagement.
+- **Acceptance Criteria:**
+  - Wireframes and designs are created and approved by stakeholders.
+  - Design aligns with existing website aesthetics.
+  - Accessibility standards are met.
+
+---
+
+**Task 2: Implement Wish List Creation Functionality**
+- **What:** Develop the backend functionality for users to create new wish lists.
+- **How:** Build an API endpoint that allows users to create a wish list and store it in the database.
+- **Why:** To enable users to save products they are interested in for later purchase.
+- **Acceptance Criteria:**
+  - Users can successfully create a new wish list.
+  - The wish list is stored in the database and associated with the user’s account.
+
+---
+
+**Task 3: Add Products to Wish List**
+- **What:** Implement functionality to allow users to add products to their wish lists from product pages.
+- **How:** Modify product page components to include an "Add to Wish List" button that triggers an API call.
+- **Why:** To provide a seamless shopping experience where users can save items of interest.
+- **Acceptance Criteria:**
+  - Users can add products to their wish list from the product page.
+  - The wish list is updated in real-time to reflect added items.
+
+---
+
+**Task 4: User Account Dashboard Integration**
+- **What:** Enable users to view and edit their wish lists from their account dashboard.
+- **How:** Create a dashboard section dedicated to wish lists and integrate it with the existing user account system.
+- **Why:** To allow users to manage their wish lists easily.
+- **Acceptance Criteria:**
+  - Users can view all their wish lists on the dashboard.
+  - Users can edit the title or description of their wish lists.
+
+---
+
+**Task 5: Implement Sharing Functionality**
+- **What:** Add functionality for users to share their wish lists via email or social media.
+- **How:** Create shareable links and integrate sharing options into the wish list interface.
+- **Why:** To allow users to share their interests with friends and family for gift ideas or collaborative shopping.
+- **Acceptance Criteria:**
+  - Users can share wish lists via email and social media platforms.
+  - Shared lists are viewable by recipients without requiring them to log in.
+
+---
+
+**Task 6: Mark Items as Purchased or Remove**
+- **What:** Implement functionality for users to mark items as purchased or remove them from their wish lists.
+- **How:** Add options to the wish list interface for marking items and updating the database accordingly.
+- **Why:** To help users keep track of their purchases and declutter their wish lists.
+- **Acceptance Criteria:**
+  - Users can mark items as purchased, and they are visually updated on the list.
+  - Users can remove items from the wish list, and the changes are reflected in the database.
+
+---
+
+**Task 7: Track Availability and Price Changes**
+- **What:** Develop a system to track the availability and price changes of items on the wish list.
+- **How:** Create background jobs that check product availability and prices at scheduled intervals.
+- **Why:** To notify users about price drops and stock changes, enhancing their shopping experience.
+- **Acceptance Criteria:**
+  - The system successfully tracks availability and price changes.
+  - Notifications are sent to users when there are significant changes.
+
+---
+
+**Task 8: Notifications for Price Drops and Out of Stock**
+- **What:** Implement a notification system for users regarding price drops or out-of-stock items.
+- **How:** Use email or in-app notifications to alert users about changes.
+- **Why:** To keep users informed and encourage them to make purchases promptly.
+- **Acceptance Criteria:**
+  - Users receive timely notifications for price drops and stock changes.
+  - Notifications can be managed in user preferences.
+
+---
+
+**Task 9: Sorting and Filtering Options**
+- **What:** Add sorting and filtering options to the wish list interface.
+- **How:** Implement UI elements that allow users to sort by price, date added, or category.
+- **Why:** To help users easily navigate through their wish lists and find items quickly.
+- **Acceptance Criteria:**
+  - Users can sort and filter items effectively.
+  - Sorting and filtering options work seamlessly across different devices.
+
+---
+
+**Task 10: Privacy Settings for Wish Lists**
+- **What:** Create privacy settings that allow users to control who can view and edit their wish lists.
+- **How:** Implement access control settings in the wish list management interface.
+- **Why:** To give users control over their wish lists and enhance security.
+- **Acceptance Criteria:**
+  - Users can set their wish lists to private or share with specific individuals.
+  - Changes in privacy settings are reflected in the user interface.
+
+---
+
+### Test Scope and Test Cases
+
+**Test Scope:**
+- Verify the functionality of the wish list feature including creation, editing, sharing, tracking, and notifications.
+- Ensure the user interface is intuitive and aligns with design specifications.
+- Test for performance and security, particularly around user privacy settings.
+
+---
+
+**Test Case 1: Wish List Creation**
+- **Objective:** Validate that users can create a wish list successfully.
+- **Steps:**
+  1. Log into the user account.
+  2. Navigate to the wish list section.
+  3. Click on "Create New Wish List."
+  4. Enter a name and description.
+  5. Submit the form.
+- **Expected Result:** A new wish list is created and appears in the user's account dashboard.
+
+---
+
+**Test Case 2: Adding Products to Wish List**
+- **Objective:** Ensure users can add products to their wish lists.
+- **Steps:**
+  1. Go to a product page.
+  2. Click on "Add to Wish List."
+  3. Select the desired wish list or create a new one.
+- **Expected Result:** The product is added to the specified wish list, and the list is updated in real-time.
+
+---
+
+**Test Case 3: Sharing Wish List**
+- **Objective:** Confirm that users can share their wish lists via email and social media.
+- **Steps:**
+  1. Open a wish list.
+  2. Click on the "Share" button.
+  3. Choose email or social media.
+  4. Enter the recipient's details.
+  5. Send the wish list.
+- **Expected Result:** The recipient receives the wish list link via email or social media.
+
+---
+
+**Test Case 4: Notifications for Price Drops**
+- **Objective:** Test that users receive notifications for price drops.
+- **Steps:**
+  1. Add an item to the wish list.
+  2. Simulate a price drop for that item.
+  3. Wait for the notification interval.
+- **Expected Result:** The user receives a notification about the price drop.
+
+---
+
+**Test Case 5: Privacy Settings Functionality**
+- **Objective:** Validate that privacy settings work correctly.
+- **Steps:**
+  1. Open the wish list settings.
+  2. Change the privacy setting to "Private."
+  3. Attempt to access the wish list from a different account.
+- **Expected Result:** The wish list is not accessible from the other account.
+
+---
+
+This breakdown provides a structured approach to developing and testing the wish list feature, ensuring all user needs are met while maintaining quality throughout the process.
+
+Process finished with exit code 0
