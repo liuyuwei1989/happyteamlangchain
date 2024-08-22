@@ -28,21 +28,16 @@ def convert_requirements_to_jiras_and_plantuml():
       200:
         description: input your requirement and return a jira list and plantuml
         schema:
-          id: requirements
+          id:  jiraListAndPlantumlResponse
           properties:
-            message:
-              description: The response
-              schema:
-                id: jiraListAndPlantuml
-                properties:
-                  jiras:
-                    type: array
-                    items:
-                      type: string
-                    description: The jira list
-                  plantuml:
-                    type: string
-                  description: The PlantUml diagram
+            jiras:
+              type: array
+              items:
+                type: string
+              description: The jira list
+            plantuml:
+              type: string
+              description: The PlantUml diagram
     """
     data = request.get_json()
 
